@@ -145,44 +145,45 @@ h4 {
     }
 
     h1 {
-        font-size: 75px;
+        font-size: 50px;
         /* font-weight: bold; */
     }
 
-    p {
-        font-size: 50px;
+     p {
+        font-size: 22px;
     }
 
-    h2 {
+    /* h2 {
         font-size: 60px;
-    }
+    } */
 
-    h3 {
+    /* h3 {
         font-size: 100px;
-    }
+    } */
 
     h4 {
-        font-size: 50px;
+        font-size: 25px;
     }
 
     li {
-        font-size: 50px;
+        font-size: 25px;
     }
+    
 
-    header {
+    /* header {
         padding-top: 75px;
-    }
+    } */
 
-    button {
+    /* button {
         font-size: 75px;
-    }
+    } */
 
-    #logo {
+    /* #logo {
         animation: none;
         opacity: 1;
         width: 750px;
-        /* align-content: center; */
-    }
+        align-content: center;
+    } */
 
     .nav_links {
         display: flex;
@@ -195,20 +196,17 @@ h4 {
         width: 150px;
         border: 2px solid #45ADDD;
         margin-bottom: 50px;
-    }
+    } 
 
     .pricing {
+        display: flex;
         flex-direction: row;
         align-items: flex-end;
         /* width: 275px; */
-        
+        left: 50%;
     }
 
     #gallery, .gallery {
         display: none;
     }
 }
-
-/* @media screen and (min-width: 800px) {
-
-} */
