@@ -134,6 +134,8 @@ h4 {
 @media (prefers-reduced-motion: reduce) {
     #logo {
       animation: none;
+      width: 475px;
+      opacity: 1;
     }
 }
 
@@ -169,7 +171,6 @@ h4 {
         font-size: 25px;
     }
     
-
     /* header {
         padding-top: 75px;
     } */
@@ -202,11 +203,12 @@ h4 {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        /* width: 275px; */
         left: 50%;
     }
 
     #gallery, .gallery {
         display: none;
     }
+
+    /* I'LL BE REAL CHIEF, I DON'T WANNA DO THE EMOJI STUFF */
 }
