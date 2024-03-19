@@ -1,0 +1,214 @@
+#logo {
+    width: 25px;
+    opacity: 0;
+    animation: xpand 5s forwards;
+    /* align-content: center; */
+}
+
+@keyframes xpand {
+    from { width: 25px; opacity: 0;}
+    to { width: 475px; opacity: 1;}    
+}
+
+body {
+    font-family: 'Poppins', serif;
+    background-image: url('concrete_seamless.png'), /*#F1F1F1*/ linear-gradient(#F1F1F1, #F1F1F1);
+}
+
+/* nav {
+    display:inline-flex;
+} */
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_links {
+    display: block;
+}
+
+/* .nav_item {
+    display: inline;
+} */
+
+a:visited{
+    color:#0000ff;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    padding-bottom: 10px;
+    text-decoration: underline #45ADAD;
+}
+
+.card > header {
+    background: #288088;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.card header {
+    border-bottom: none;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    width: 450px;
+    /* border: 2px solid #45ADAD; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    /* padding: 20px; */
+    /* margin: 10px; */
+    flex-direction: column;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row
+    }
+
+    .nav_links {
+        display: flex;
+    }
+
+    .card {
+        max-width: 275px;
+    }
+
+    .pricing {
+        flex-direction: row;
+    }
+    
+    /* STUCK ON CHALLENGE PROBLEM */
+
+    .header:first-child {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        /* background-attachment: fixed;     
+        background-position: center;  
+        background-repeat: no-repeat; 
+        background-size: cover;  */
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+      animation: none;
+    }
+}
+
+@media print {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: none;
+        background-color: #F1F1F1;
+    }
+
+    h1 {
+        font-size: 75px;
+        /* font-weight: bold; */
+    }
+
+    p {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 100px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+
+    li {
+        font-size: 50px;
+    }
+
+    header {
+        padding-top: 75px;
+    }
+
+    button {
+        font-size: 75px;
+    }
+
+    #logo {
+        animation: none;
+        opacity: 1;
+        width: 750px;
+        /* align-content: center; */
+    }
+
+    .nav_links {
+        display: flex;
+        font-size: 2em;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 150px;
+        border: 2px solid #45ADDD;
+        margin-bottom: 50px;
+    }
+
+    .pricing {
+        flex-direction: row;
+        align-items: flex-end;
+        /* width: 275px; */
+        
+    }
+
+    #gallery, .gallery {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 800px) {
+
+} */
